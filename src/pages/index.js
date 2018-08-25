@@ -3,10 +3,11 @@ import Link from 'gatsby-link'
 
 const IndexPage = () => (
   <div>
-    <h1>Hi people</h1>
-    <p>Sameer Sawant CV.</p>
-    <p>Frontend developer, Senior Consultant  </p>
-    <Link to="/page-2/">For tiden: React, ES6, Javascript</Link>
+    <h1>Sameer Sawant</h1>
+    <p>Kontaktinformasjon  </p>
+    <p>Epost: sameer.c.sawant@sogeti.com	Telefon: +47 980 00 344 </p>
+
+    <Link to="/CV/">For tiden: React, ES6, Javascript</Link>
   </div>
 )
 
