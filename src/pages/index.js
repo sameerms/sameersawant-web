@@ -1,14 +1,45 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from "react";
+import Link from "gatsby-link";
+import Helmet from "react-helmet";
 
-const IndexPage = () => (
-  <div>
-    <h1>Sameer Sawant</h1>
-    <p>Kontaktinformasjon  </p>
-    <p>Epost: sameer.c.sawant@sogeti.com	Telefon: +47 980 00 344 </p>
+import '../styles/blog-listing.css'; 
 
-    <Link to="/CV/">For tiden: React, ES6, Javascript</Link>
-  </div>
-)
+export default function Index({ data }) {
+  const { edges: posts } = data.allMarkdownRemark;
+  return (
+    <div className="blog-posts">
+      {posts
+        .filter(post => post.node.frontmatter.title.length > 0)
+        .map(({ node: post }) => {
+          return (
+            <div className="blog-post-preview" key={post.id}>
+              <h1>
+                <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
+              </h1>
+              <h2>{`Fra -${post.frontmatter.date1} Til-${post.frontmatter.date2} `}</h2>
+              <p>{post.excerpt}</p>
+            </div>
+          );
+        })}
+    </div>
+  );
+}
 
-export default IndexPage
+export const pageQuery = graphql`
+  query IndexQuery {
+    allMarkdownRemark {
+      edges {
+        node {
+          excerpt(pruneLength: 250)
+          id
+          frontmatter {
+            title
+            date1(formatString: "MMMM DD, YYYY")
+            date2(formatString: "MMMM DD, YYYY")
+            path
+          }
+        }
+      }
+    }
+  }
+`;
