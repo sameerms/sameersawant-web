@@ -30,7 +30,7 @@ export const pageQuery = graphql`
     allMarkdownRemark {
       edges {
         node {
-          excerpt(pruneLength: 250)
+          excerpt(pruneLength: 600)
           id
           frontmatter {
             title

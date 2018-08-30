@@ -2,11 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import Link from "gatsby-link";
 import Helmet from "react-helmet";
+import {Image} from 'react';
 
 import "./index.css";
 import "../styles/layout-overide.css";
 
+
 import Media from "react-media";
+import Avatars from "./Avatars.js";
+
 
 const Header = () => (
   <div
@@ -19,7 +23,6 @@ const Header = () => (
     <div
       style={{
         margin: "0 auto",
-        maxWidth: 980,
         padding: "1.45rem 1.0875rem"
       }}
     >
@@ -32,7 +35,9 @@ const Header = () => (
           }}
         >
           Sameer Sawant
+          
         </Link>
+
       </h1>
     </div>
   </div>
@@ -48,6 +53,7 @@ const Sidebar = props => (
     }}
   >
     <strong>{props.title}.</strong> {props.description}
+    
   </div>
 );
 
@@ -103,10 +109,12 @@ const TemplateWrapper = ({ children }) => (
                 {children()}
               </div>
 
+             
               <div style={{ flex: 1 }}>
-                <Sidebar
+              <Avatars/>
+               <Sidebar
                   title="Profil"
-                  description="Full Stack utvikler .net, react, J2EE. For Tiden : React Native, react/redux "
+                  description="Full Stack utvikler .net, java, J2EE. For Tiden : React Native, react/redux , javascript "
                 />
                 <Sidebar
                   title="Om meg"

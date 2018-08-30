@@ -71,8 +71,8 @@ export default class helsedirektoratet extends React.Component
     }
     render(){
       return( <div>
-        <h1>Helsedirektoratet: Full stack utvikler</h1>
-        <h1> teknisk tester, test utvikler</h1>
+        <h1>Helsedirektoratet: Full stack utvikler,</h1>
+        <h1> test utvikler</h1>
         <p><Markdown 
                         escapeHtml={true}
                         source={this.ContentMarkdown} 

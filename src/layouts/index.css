@@ -84,6 +84,7 @@ sup {
 }
 img {
   border-style: none;
+  background-image: '../img/wordcloud.svg';
 }
 svg:not(:root) {
   overflow: hidden;
