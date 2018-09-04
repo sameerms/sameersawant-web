@@ -1,11 +1,20 @@
 
-* {
+.section {
+    position:relative;
     background: #eae6e6;
     color: black;
+    background-image: url("../img/wordcloud.svg");
     
 }
+.top {
+    background-image:  url("../img/wordcloud.svg");
+    }
+.middle {
+    background-image: url("http://random-international.com/wp-content/uploads/2012/10/RR-home-img2.jpg");
+    }
 html {
     height: 100%;
+    
 }
 
 body {

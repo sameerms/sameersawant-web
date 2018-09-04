@@ -21,7 +21,7 @@ function ImageAvatars(props) {
      
      
      <Avatar
-        alt="Adelle Charles"
+        alt="Sameer Sawant"
         src= {SameerSawant_v1}
         className={classNames(classes.avatar, classes.bigAvatar)}
       />

@@ -2,6 +2,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Markdown from 'react-markdown'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee, faCheck } from '@fortawesome/free-solid-svg-icons'
+
 
 
 export default class helsedirektoratet extends React.Component 
@@ -10,8 +13,17 @@ export default class helsedirektoratet extends React.Component
         super(props, context);
 
         // Define some Markdown content
+        this.element = <FontAwesomeIcon icon={faCoffee} />
       
-  this.ContentMarkdown =` **Prosjektnavn :**
+  this.ContentMarkdown =` 
+  
+**Kunde** : **Helsedirektoratet** 
+Avdeling: Utvikling og Forvaltning  
+  Helsedirektoratet er er et fag- og myndighetsorgan som er underlagt Helse- og omsorgsdepartementet. Direktoratet har også oppgaver fra Kommunal- og regionaldepartementet. 
+ Direktoratet er faglig rådgiver, iverksetter av vedtatt politikk og forvalter av lov og regelverk innenfor helse- og omsorgssektoren.
+I tillegg har Helsedirektoratet et helhetlig ansvar for den nasjonale helseberedskapen i Norge.
+**Referanse**: Aleksandra Pesaljevic
+**Prosjektnavn :**
  EESSI- Electronic Exchange of Social Security Information
  
 
@@ -26,7 +38,7 @@ export default class helsedirektoratet extends React.Component
  
  **Beskrivelse **
  
- Hovedmålet med prosjektet er å etablere en IT-plattform som vil hjelpe de sosiale trygdeordningene (social security institutions) på tvers av 32 land (de 28 EU landene og i tillegg Island, Liechtenstein, Norge og Sveits) med å utveksle strukturerte elektroniske dokumenter (SEDs). Prosjektet vil levere det sentrale IT-nettverket for å støtte de internasjonale utvekslingene, samt en nasjonalt applikasjon som kan brukes av de nasjonale institusjonene til å opprette, sende, motta og behandle elektroniske meldinger. -- Testleder, teknisk tester og test utvikler for utvkling av saksbehandling løsning «ESLA» og integrasjonsplattform i helsedirektoratet.
+ 
  
  - Utviklet integrasjon tester med JEST og Enzyme.
  
@@ -77,10 +89,8 @@ export default class helsedirektoratet extends React.Component
                         escapeHtml={true}
                         source={this.ContentMarkdown} 
                     />
-     
-    
      </p>
-        <Link to="/">Tilbake </Link>
+        <Link to="/">{this.element}</Link>
       </div>);
     }
   }

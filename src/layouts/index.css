@@ -39,6 +39,7 @@ template {
 }
 a {
   background-color: transparent;
+  background-image: '../img/wordcloud.svg';
   -webkit-text-decoration-skip: objects;
 }
 a:active,
@@ -84,7 +85,7 @@ sup {
 }
 img {
   border-style: none;
-  background-image: '../img/wordcloud.svg';
+  
 }
 svg:not(:root) {
   overflow: hidden;
