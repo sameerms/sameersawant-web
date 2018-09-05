@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import Markdown from 'react-markdown'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faCheck } from '@fortawesome/free-solid-svg-icons'
+import {Element} from 'react-stylesheet'
 
 
 
@@ -64,7 +65,12 @@ render(){
                     source={this.ContentMarkdown} 
                 />
  </p>
-    <Link to="/">{this.element}</Link>
+ <Link to="/"><Element
+  background="blue"
+  backgroundOnHover="yellow"
+  color="yellow"
+  colorOnHover="Blue"
+  padding={10}>{this.element}</Element></Link>
   </div>);
 }
   

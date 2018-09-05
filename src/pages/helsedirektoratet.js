@@ -1,5 +1,7 @@
 
 import React from 'react'
+import {Element} from 'react-stylesheet'
+
 import Link from 'gatsby-link'
 import Markdown from 'react-markdown'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -90,7 +92,12 @@ I tillegg har Helsedirektoratet et helhetlig ansvar for den nasjonale helsebered
                         source={this.ContentMarkdown} 
                     />
      </p>
-        <Link to="/">{this.element}</Link>
+        <Link to="/"><Element
+  background="blue"
+  backgroundOnHover="yellow"
+  color="yellow"
+  colorOnHover="Blue"
+  padding={10}>{this.element}</Element></Link>
       </div>);
     }
   }
