@@ -3,9 +3,10 @@ import PropTypes from "prop-types";
 import Link from "gatsby-link";
 import Helmet from "react-helmet";
 import {Image} from 'react';
+import techTabell from '../components/techTabell'
 
 import "./index.css";
-import "../styles/layout-overide.css";
+//import "../styles/layout-overide.css";
 
 
 import Media from "react-media";
@@ -67,7 +68,7 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header />
-    <div id="content top"
+    <div 
       style={{
         margin: "0 auto",
         maxWidth: 980,
@@ -78,17 +79,17 @@ const TemplateWrapper = ({ children }) => (
         
       }}
     >
-      <Media query={{ maxWidth: 848 }}>
+      <Media query={{ maxWidth: 0 }}>
         {matches =>
           matches ? (
             <div
               style={{
                 margin: "0 auto",
-                maxWidth: 980,
+                
                 display: "flex",
                 flexDirection: "row",
                 justifyContent: "space-between",
-                height: "100%",
+                
                 padding: "25px"
               }}
             >
@@ -98,7 +99,7 @@ const TemplateWrapper = ({ children }) => (
             <div
               style={{
                 margin: "0 auto",
-                maxWidth: 980,
+               
                 display: "flex",
                 flexDirection: "row",
                 justifyContent: "space-between",
@@ -126,6 +127,7 @@ const TemplateWrapper = ({ children }) => (
           )
         }
       </Media>
+      <techTabell/>
     </div>
   </div>
 );
