@@ -3,10 +3,8 @@ import PropTypes from "prop-types";
 import Link from "gatsby-link";
 import Helmet from "react-helmet";
 import {Image} from 'react';
-import techTabell from '../components/techTabell'
-
 import "./index.css";
-//import "../styles/layout-overide.css";
+
 
 
 import Media from "react-media";
@@ -27,11 +25,11 @@ const Header = () => (
         padding: "1.45rem 1.0875rem"
       }}
     >
-      <h1 style={{ margin: 0, textAlign: "center", fontSize: "18px" }}>
+      <h1 style={{ margin: 0, textAlign: "center", fontSize: "18px Inkfree" }}>
         <Link
           to="/"
           style={{
-            color: "black",
+            color: "blue",
             textDecoration: "none"
           }}
         >
@@ -127,7 +125,7 @@ const TemplateWrapper = ({ children }) => (
           )
         }
       </Media>
-      <techTabell/>
+      
     </div>
   </div>
 );

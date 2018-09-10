@@ -6,13 +6,12 @@ title: "Helsedirektoratet"
 tags: ['Programming', 'Frontend', 'CSS']
 ---
 
- # Avdeling: Utvikling og Forvaltning **Helsedirektoratet** 
-  - er et fag- og myndighetsorgan som er underlagt Helse- og omsorgsdepartementet. Direktoratet har også oppgaver fra Kommunal- og regionaldepartementet. 
- Direktoratet er faglig rådgiver, iverksetter av vedtatt politikk og forvalter av lov og regelverk innenfor helse- og omsorgssektoren.
-I tillegg har Helsedirektoratet et helhetlig ansvar for den nasjonale helseberedskapen i Norge.
-Referanse: Aleksandra Pesaljevic
+ Hovedmålet med prosjektet er å etablere en IT-plattform som vil hjelpe de sosiale trygdeordningene (social security institutions) på tvers av 32 land (de 28 EU landene og i tillegg Island, Liechtenstein, Norge og Sveits) med å utveksle strukturerte elektroniske dokumenter (SEDs). 
+ Prosjektet vil levere det sentrale IT-nettverket for å støtte de internasjonale utvekslingene, samt en nasjonalt applikasjon som kan brukes av de nasjonale institusjonene til å opprette, sende, motta og behandle elektroniske meldinger. 
+ Bidratt som forntend utviker og test utvikler for utvkling av saksbehandling løsning «ESLA» og integrasjonsplattform i helsedirektoratet.
+ 
 Epost: [Aleksandra.Pesaljevic@helsedir.no](mailto:Aleksandra.Pesaljevic@helsedir.no)
-Mob: 952 01 209  
+
 
 
 

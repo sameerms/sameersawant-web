@@ -24,24 +24,20 @@ Avdeling: Utvikling og Forvaltning
   Helsedirektoratet er er et fag- og myndighetsorgan som er underlagt Helse- og omsorgsdepartementet. Direktoratet har også oppgaver fra Kommunal- og regionaldepartementet. 
  Direktoratet er faglig rådgiver, iverksetter av vedtatt politikk og forvalter av lov og regelverk innenfor helse- og omsorgssektoren.
 I tillegg har Helsedirektoratet et helhetlig ansvar for den nasjonale helseberedskapen i Norge.
-**Referanse**: Aleksandra Pesaljevic
+
+**Referanse**: Aleksandra Pesaljevic /n
+*Epost*: [Aleksandra.Pesaljevic@helsedir.no](mailto:Aleksandra.Pesaljevic@helsedir.no)
+
 **Prosjektnavn :**
  EESSI- Electronic Exchange of Social Security Information
  
-
- 
- **Rolle :**
+**Rolle :**
  Utvikler, teknisk tester, testutvikler
  
- 
- **Omfang :**
- 
- 100% stilling med proskjektarbeid. Projektet bestod av 13 deltakere.
+**Omfang :** 100% stilling med proskjektarbeid. Projektet bestod av 13 deltakere.
  
  **Beskrivelse **
- 
- 
- 
+
  - Utviklet integrasjon tester med JEST og Enzyme.
  
  - Skrevet selenium rammeverk ved bruk av SpecFlow (Cucumber for .NET), Fluent syntaks i C# og automatiserte akseptanse tester for react baserte «ELSA» frontend .
