@@ -25,7 +25,7 @@ Avdeling: Utvikling og Forvaltning
  Direktoratet er faglig rådgiver, iverksetter av vedtatt politikk og forvalter av lov og regelverk innenfor helse- og omsorgssektoren.
 I tillegg har Helsedirektoratet et helhetlig ansvar for den nasjonale helseberedskapen i Norge.
 
-**Referanse**: Aleksandra Pesaljevic /n
+**Referanse**: Aleksandra Pesaljevic                                                                                                   
 *Epost*: [Aleksandra.Pesaljevic@helsedir.no](mailto:Aleksandra.Pesaljevic@helsedir.no)
 
 **Prosjektnavn :**
