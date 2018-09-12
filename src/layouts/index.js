@@ -12,8 +12,8 @@ import techTabell from '../components/techTabell';
 
 import Media from "react-media";
 import Avatars from "./Avatars.js";
-import Novo from '../pages/Novo.js'
-import Helsedirektoratet from '../pages/Helsedirektoratet'
+
+
 
 export default class Layout extends React.Component
   {
