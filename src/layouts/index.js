@@ -192,7 +192,7 @@ Sameer har bred erfaring i å jobbe med databaser som Oracle, SQL server. Han be
               </section>
             </main>
             <aside className="sidebar">
-              <section className="section" id="technologies">
+              <section className="section" id="technologier">
                 <h2>Technologies</h2>
                 <ul className="tech">
                   <li className="tech__item">
