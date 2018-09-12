@@ -73,13 +73,23 @@ export default class Layout extends React.Component
             </symbol></svg>
           <div className="grid">
             <header className="header">
-            <h2>Sameer Sawant </h2>
+            <h2>CV </h2>
             <span> <Avatars/> </span>
-            <span> <h1>samappy@gmail.com</h1>+47 98 00 03 44</span>
+            <span>
+            <aside className="about">
+              <section className="section" id="about">
+                
+                <p className="card">
+                <h2>Sameer Sawant</h2>
+            <h1>samappy@gmail.com</h1>
+            +47 98 00 03 44</p>
+            </section>
+            </aside>
+            </span>
             </header>
             <aside className="about">
               <section className="section" id="about">
-                <h2>Pofil </h2>
+                <h2>Profil </h2>
 
                 <p className="card">
 Sameer er en fullstack utvikler med mange års internasjonal, utvikler bakgrunn fra IT, elektronikk, telecom, skatt, helse og olje industri og har arbeidet med systemutvikling siden 2007.<br/>
