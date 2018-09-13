@@ -4,6 +4,7 @@ import Link from "gatsby-link";
 import Helmet from "react-helmet";
 import {Image} from 'react';
 import { push } from "gatsby-link";
+import TypographyTheme from './typography';
 
 //import "./index.css";
 import "./mycvgrid.css";
@@ -17,6 +18,10 @@ import Avatars from "./Avatars.js";
 
 export default class Layout extends React.Component
   {
+    constructor(props, context) {
+      super(props, context);
+      this.cv= 'CV';
+    }
     render() {
       return (
         <div>
@@ -73,7 +78,8 @@ export default class Layout extends React.Component
             </symbol></svg>
           <div className="grid">
             <header className="header">
-            <h2>CV </h2>
+            <h2> {<TypographyTheme name="Sara"/>}</h2>
+
             <span> <Avatars/> </span>
             <span>
             <aside className="about">

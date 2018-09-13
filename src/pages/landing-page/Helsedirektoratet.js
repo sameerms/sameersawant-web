@@ -9,7 +9,7 @@ import { faCoffee, faCheck } from '@fortawesome/free-solid-svg-icons'
 
 
 
-export default class helsedirektoratet extends React.Component 
+export default class Helsedirektoratet extends React.Component 
   {
     constructor(props, context) {
         super(props, context);
