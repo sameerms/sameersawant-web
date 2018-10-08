@@ -1,9 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import '../images/SameerSawant_v1.jpg';
 import { withStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
-import SameerSawant_v1 from "../img/SameerSawant_v1.jpg";
+import classNames from 'classnames';
+
 
 const styles = {
  
@@ -15,14 +15,15 @@ const styles = {
 };
 
 function ImageAvatars(props) {
-  const { classes } = props;
+  const { classes, logoUrl } = props;
+  
   return (
     <div className={classes.row}>
      
      
      <Avatar
         alt="Sameer Sawant"
-        src= {SameerSawant_v1}
+        src= {require('../images/SameerSawant_v1.jpg')}
         className={classNames(classes.avatar, classes.bigAvatar)}
       />
       
@@ -30,8 +31,6 @@ function ImageAvatars(props) {
   );
 }
 
-ImageAvatars.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
+
 
 export default withStyles(styles)(ImageAvatars);
