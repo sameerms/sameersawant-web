@@ -1,0 +1,154 @@
+/*=============================================
+=                MEDIA QUERIES                =
+=============================================*/
+
+
+//=====================//
+// Breakpoint 1 1200px //
+//=====================//
+
+@media all and (max-width: 1200px) {
+
+    header {
+        background-image: url('/wp-content/themes/richardcodes/assets/img/mobile-bg.png');
+        background-color: $brand;
+        .span-display {color: white}
+    }
+
+    .hero-skew, .skew-button {display: none}
+
+    .hero-container iframe {margin: 10px 0}
+
+    .hero-text {
+        text-align: center;
+        max-width: 560px;
+    }
+
+    .hero-text-upper {flex-direction: column}
+
+    .projects, .other-articles {padding: 30px 0}
+
+    .about {
+        background: none;
+        padding: 50px 0;
+        &-container {
+            display: block;
+            padding: 0 25px;
+            &-text {
+                width: 100%;
+                max-width: 700px;
+            }
+        }
+    }
+
+    .about-skew {display: none}
+
+    .social {height: 700px}
+
+    .social-container {
+        max-width: 472px;
+        &-half:nth-child(1) {
+            border-right: none;
+            border-bottom: 1px solid $middle-grey;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+
+//======================//
+//  Breakpoint 2 720px  //
+//======================//
+
+@media all and (max-width: 720px) {
+
+    .container-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        width: 100vw;
+    }
+
+    nav {
+        background-image: url('/wp-content/themes/richardcodes/assets/img/menu-bg.png');
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        transform: translateY(-100vh);
+    }
+
+    nav ul {
+        padding: 40px 0;
+        transform: translateX(0);
+    }
+    
+    nav ul li {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 1.5rem 0;
+    }
+
+    nav ul li a {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .hero-text {
+        max-width: 400px;
+        margin: -30px 30px 0;
+        .h1-display {font-size: 2.2rem}
+        .highlight {font-size: .8rem}
+    }
+
+    .hero-container iframe, .article-container iframe {
+        width: 336px;
+        height: 189px;
+    }
+
+    .article-container iframe {text-align: center}
+
+    .article-container {
+        padding: 0 20px 60px;
+        max-width: 100%;
+        .title {padding: 60px 10px 30px}
+    }
+
+    .article nav {
+        width: 100%;
+        ul {transform: translateX(0px)}
+    }
+}
+  
+
+//=====================//
+// Breakpoint 3 471px //
+//=====================//
+
+@media all and (max-width: 471px) {
+    
+    html {font-size: 14px}
+
+    h1 {font-size: 2.4em}
+
+    #navToggle {
+        right: 8px;
+        top: 8px;
+    }
+
+    .card-p {font-size: 1rem}
+
+    .social-container {
+        max-width: 320px;
+        .insta-grid{
+            justify-content: center;
+            &-pic {
+                width: 68px;
+                height: 68px;
+            }
+        }
+        .p-mail {font-size: 1rem}
+    }
+
+    .footer-socials {margin: 10px 0}
+}

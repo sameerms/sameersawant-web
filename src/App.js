@@ -5,24 +5,18 @@ import Hovedside from '../src/components/hovedside'
 import Erfaringkomponent from './components/Erfaringkomponent';
 import Prosjekterkomponent from './components/Prosjekterkomponent';
 import Skatteetatenkomponent from './components/Skatteetatenkomponent';
+import Hjem from './components/Hjem';
 
 class App extends Component {
 
-  constructor(){
-    super();
-    this.state= { name: "første" };
-    console.log("constr");
-  }
-  componentWillMount(){
-    console.log("comp will mnt");
-  }
   render() {
     return (
       
       <div className="App">
        
           <Switch>
-            <Route exact path="/" component={Hovedside} />
+            <Route exact path="/" component= {Hjem}/>
+            <Route exact path="/Hovedside" component={Hovedside} />
             <Route path="/Erfaring" component={Erfaringkomponent} />
             <Route path="/Prosjekter" component={Prosjekterkomponent} />
             <Route path="/Skatteetaten" component={Skatteetatenkomponent} />

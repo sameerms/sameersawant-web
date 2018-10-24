@@ -1,0 +1,498 @@
+/*=============================================
+=                 STYLESHEET                 =
+=============================================*/
+
+@import 'wordpress';
+@import 'normalise';
+@import 'colors';
+@import 'typography';
+@import 'animations';
+
+// NAVIGATION
+.container-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 670px;
+    height: 86px;
+    margin: 0 auto;
+    z-index: 100;
+    transition: 400ms all ease-in-out;
+}
+
+.cont-nav-open {height: 100vh}
+
+nav {
+    text-align: right;
+    overflow: hidden;
+    margin: 18px 70px 28px 0;
+    width: 540px;
+    transition: 400ms all ease-in-out;
+}
+
+.menu-open {
+    transform: translateX(0px)!important;
+    z-index: 100;
+}
+
+.mobile-open {
+    transform: translateY(0px);
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-right: 22px;
+    opacity: 1;
+    transition: 700ms all ease-in-out;
+    transform: translateX(540px);
+}
+
+nav ul li {
+    border-bottom: none;
+    display: inline-block;
+    padding: 0 .5rem;
+}
+
+nav ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: $black;
+    background: $brand;
+    padding: .2rem 1.3rem;
+    text-decoration: none;
+    transition: 250ms all ease;
+    border-radius: 2px;
+}
+
+nav ul li:hover a, .nav-active {
+    color: $brand;
+    background-color: $black;
+}
+
+// Mobile Toggle 
+
+#navToggle {
+    position: absolute;
+    right: 22px;
+    top: 15px;
+    bottom: 0;
+    transition: 300ms all ease;
+    cursor: pointer;
+    display: block;
+    padding: 10px 10px;
+    transition: 300ms all ease;
+    transform: rotate(0deg);
+    z-index: 101;
+    height: 30px;
+    width: 30px;
+}
+
+#navToggle:hover span {opacity: 0.8}
+
+#navToggle span {
+    position: absolute;
+    margin: 14px 2px;
+    height: 4px;
+    width: 26px;
+    background-color: black;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+    cursor: pointer;
+}
+
+#navToggle span:nth-child(1) {top: 0px}
+
+#navToggle span:nth-child(2) {top: 9px}
+
+#navToggle span:nth-child(3) {top: 18px}
+
+#navToggle.open span:nth-child(1) {
+    top: 9px;
+    transform: rotate(135deg);
+}
+
+#navToggle.open span:nth-child(2) {opacity: 0}
+
+#navToggle.open span:nth-child(3) {
+    top: 9px;
+    transform: rotate(-135deg);
+}
+
+// Hero Image
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section:focus {
+    outline: none
+}
+
+header {
+    background: url('/wp-content/themes/richardcodes/assets/img/hero-bg.png')repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-blog {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-skew {
+    background-color: $brand;
+    width: 130%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    &::after {
+        height: 94px;
+        width: 100px;
+        background-color: black;
+        background-image: url('/wp-content/themes/richardcodes/assets/img/arrow.svg');
+        background-repeat: no-repeat;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        background-position: 26px 36px;
+    }
+}
+.skew-button {
+    height: 90px;
+    width: 100px;
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: auto;
+    transform: translateX(24px) skew(-10deg);
+}
+
+.hero-container {
+    max-width: 1200px;
+    padding: 100px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: opacity-animation .8s ease-in .5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    iframe {
+        width: 560px;
+        height: 315px;
+    }
+}
+
+.hero-text {
+    max-width: 520px;
+    margin: 0 30px;
+    .avatar {
+        width: 60px;
+        margin: 6px 10px 6px 0;
+    }
+    &-upper {
+        display: flex;
+        align-items: center;
+    }
+}
+
+iframe {
+    margin: 0 30px;
+    box-shadow: 6px 6px 12px 2px rgba($black, 0.5);
+}
+
+// About Section
+
+.about {
+    background: url('/wp-content/themes/richardcodes/assets/img/about-bg.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 80px 0;
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        &-text {
+            z-index: 10;
+            width: 50%;
+            opacity: 0;
+            &-socials {
+                display: flex;
+                width: 236px;
+                justify-content: space-between;
+                .socials {
+                    background-color: $light-grey;
+                    width: 20px;
+                    height: 20px;
+                    padding: 10px;
+                    border-radius: 40px;
+                    display: flex;
+                    transition: all 2s ease;
+                    path {transition: fill .4s ease}
+                }
+            }
+        }
+    }
+    .signature {
+        width: 240px;
+        margin: 0em 0 -1.2em -1.4em;
+    }
+}
+
+// Social Media Path Colors
+
+#instagram:hover path {fill: $instagram}
+
+#youtube:hover path {fill: $youtube}
+
+#twitch:hover path {fill: $twitch}
+
+#github:hover path {fill: $github}
+
+#email:hover path {fill: $brand}
+
+.about-skew {
+    background-color: white;
+    width: 52%;
+    height: 1074px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transform: skew(-8deg);
+    transform-origin: 0 0;
+}
+
+// Project Section
+
+.projects, .other-articles {
+    background-image: url('/wp-content/themes/richardcodes/assets/img/hero-bg.png');
+    background-color: $lightest-grey;
+    width: 100%;
+    padding: 60px 0;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 70px auto;
+    max-width: 880px;
+    &-item {
+        background-color: $brand;
+        color: $black;
+        padding: 6px 16px;
+        margin: 8px 8px;
+        border-radius: 2px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        font-size: .8em;
+        transition: fill .4s ease;
+        cursor: pointer;
+        &:hover {
+            color: $brand;
+            background-color: $black;
+        }
+    }
+    .active {
+        background-color: $black;
+        color: $brand;
+    }
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 380px;
+    .card {
+        height: 330px;
+        width: 302px;
+        margin: 0 14px 40px;
+        border: 1px solid lighten($grey, 60);
+        border-radius: 2px;
+        background-color: white;
+        opacity: 0;
+        &-image {
+            height: 172px;
+            width: 302px;
+            border-bottom: 1px solid $middle-grey;
+        }
+        &-text {
+            text-align: center;
+            padding: 0 12px;
+            position: relative;
+            &-more {
+                display: flex;
+                margin: 0 auto;
+                justify-content: center;
+                position: absolute;
+                top: 90px;
+                left: 0;
+                right: 0;
+                .more {
+                    padding: 0 8px;
+                    opacity: 0.5;
+                }
+                .more:hover {opacity: 0.7}
+            }
+        }
+    }
+}
+
+// Social Media Section
+
+.social {
+    height: 400px;
+    position: relative;
+    &-container {
+        width: 100%;
+        max-width: 1150px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        box-shadow: 4px 4px 10px 2px rgba($black, 0.2);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: white;
+        &-half {
+            box-sizing: border-box;
+            width: 515px;
+            margin: 30px;
+            img {
+                width: 36px;
+                margin-right: 10px;
+            }
+            &:nth-child(1) {border-right: 1px solid $middle-grey}
+        }
+        .insta-header, .twitter-header {
+            display: flex;
+            align-items: center;
+            .h4-display { color: $dark-grey}
+        }
+        .insta-grid {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: start;
+            margin: 15px 0;
+            &-pic {
+                width: 86px;
+                height: 86px;
+                border: 1px solid $light-grey;
+                margin: 10px 15px 10px 0;
+                &:hover {opacity: 0.86}
+            }
+        }
+        .contact-text {
+            padding-bottom: 100px;
+            .p-mail {
+                color: $black;
+                background-color: $brand;
+                display: inline;
+                padding: 2px 10px;
+                &:hover {background-color: darken($brand, 2)}
+            }
+        }
+    }
+}
+
+// Footer Section
+
+.footer {
+    background-color: $darkest-grey;
+    position: relative;
+    .h3-display {
+        font-weight: 400;
+        font-size: 1.8em;
+        &:after {
+            border-bottom-color: white;
+            border-bottom-width: 3px;
+        }
+    }
+    &::before {
+        position: absolute;
+        background-color: inherit;
+        width: 100%;
+        height: 60px;
+        top: 0;
+        transform: skew(0, -1deg);
+        transform-origin: 0 100%;
+        content: '';
+    }
+    &-container {padding: 60px 0 10px}
+    &-socials {
+        display: flex;
+        justify-content: center;
+        margin: 20px 20px 20px 0;
+        path {fill: white}
+    }
+}
+
+// Project Section
+
+.bg-wrapper {
+    padding-top: -80px;
+    height: 100%;
+    background-image: url('/wp-content/themes/richardcodes/assets/img/blog-bg.png');
+    background-repeat: repeat-x;
+}
+
+.article-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px 140px;
+    display: block;
+    hyphens: auto;
+    .title {padding: 100px 10px 30px}
+    a {word-break: break-all}
+    figure {margin-bottom: 38px}
+    img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+        border: 1px solid lighten($grey, 60);
+    }
+    .view-buttons-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.other-articles .card-container {
+    padding: 80px 0 20px;
+    .card {opacity: 1}
+}
+
+// Nav for projects
+.article nav {
+    width: 200px;
+    ul {transform: translateX(160px)}
+}
+
+@import 'mediaqueries';
